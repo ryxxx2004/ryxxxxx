@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aira Joy M. Macalood - Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts for professional style -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #214054;
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #d4d6d6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: #214054;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+      padding: 30px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding-bottom: 12px;
+    }
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: #c9c9c9;
+      border: 5px solid #2e4a5e;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+    }
+    .title-section {
+      flex: 1;
+    }
+    .name {
+      font-size: 2.2rem;
+      font-family: 'Orbitron', Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #e9f8ff;
+    }
+    .subtitle, .info {
+      font-size: 1.08rem;
+      margin-top: 4px;
+      color: #bdd4de;
+      font-weight: 500;
+    }
+    .section {
+      background: #3c515d;
+      border-radius: 18px;
+      margin: 32px 0 0 0;
+      padding: 18px 22px;
+      font-size: 1.01rem;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+    }
+    .section-title {
+      font-size: 1.22rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .section ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .contact-bar {
+      background: #3c515d;
+      border-radius: 18px;
+      margin: 32px 0 0 0;
+      padding: 12px 22px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.05rem;
+      color: #e3e3e3;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 36px;
+      color: #bdd4de;
+      font-size: 1.15rem;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 8px; }
+      .header { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .contact-bar { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <!-- Placeholder avatar, you can replace src with your own image! -->
+      <img src="https://raw.githubusercontent.com/ryxxx2004/ryxxx2004.github.io/main/profile-placeholder.png" alt="Profile Photo" class="avatar">
+      <div class="title-section">
+        <div class="name">AIRA JOY M. MACALOOD</div>
+        <div class="subtitle">4th Year Computer Engineering Student</div>
+        <div class="info">
+          macalood.airajoy@marsu.edu.ph<br>
+          Bantay, Boac, Marinduque<br>
+          November 28, 2004 | 20 Years Old
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">About Me</div>
+      <div>
+        As a 4th year Computer Engineering student at Marinduque State University, I have developed a strong curiosity for how technology can be applied to improve everyday life. My academic journey has given me opportunities to explore both hardware and software, allowing me to work on projects that involve automation, embedded systems, and applied research. I enjoy turning ideas into working solutions and learning new methods to improve them.<br><br>
+        What motivates me most is the challenge of problem solving. Whether through designing circuits, writing code, or testing systems, I approach tasks with persistence and creativity. I also value collaboration, as working with others helps me gain new perspectives and produce better results. Beyond academics, I continue to explore technology through self-study and side projects, building a mindset that is adaptable and forward looking.
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div>
+        Senior High School Marinduque National High School (2020 – 2022)<br>
+        <em>With Honors</em><br>
+        Junior High School Marinduque National High School (2018 – 2020)<br>
+        <em>With Honors</em><br>
+        Primary Education Bantay Elementary School (2013 – 2016)
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">Achievements & Certifications</div>
+      <ul>
+        <li>10 Hours BOHS Training Course for SOI (April 2025)</li>
+        <li>Seminars & Trainings:</li>
+        <ul>
+          <li>Toxic Productivity: When Working Hard Becomes Harmful (April, 2025)</li>
+          <li>Fundamentals of Image processing using Open CV and Matlab (2023)</li>
+        </ul>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <ul>
+        <li>
+          <strong>Technical Skills:</strong> Embedded Systems: Arduino, Raspberry Pi, Microcontrollers<br>
+          Programming: Python, C, C++<br>
+          Web Technologies: HTML, CSS, JavaScript<br>
+          Security: Basic knowledge in Cybersecurity
+        </li>
+        <li>
+          <strong>Soft Skills:</strong> Adaptability in fast paced environments, Critical Thinking, Problem Solving, Team Collaboration, Project Coordination, and Time Management.
+        </li>
+      </ul>
+    </div>
+    
+    <div class="contact-bar">
+      <span>No: 09512421207</span>
+      <span>IG: @arang_samsam</span>
+      <span>FB: Aira Joy Macalood</span>
+    </div>
+    
+    <div class="footer">
+      <span>────── ❀ ──────</span>
+    </div>
+  </div>
+</body>
+</html>
