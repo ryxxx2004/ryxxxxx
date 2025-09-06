@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aira Joy M. Macalood - Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts for style -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #214054;
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #d4d6d6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: #214054;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+      padding: 30px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding-bottom: 12px;
+    }
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: #c9c9c9;
+      border: 5px solid #2e4a5e;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+    }
+    .title-section {
+      flex: 1;
+    }
+    .name {
+      font-size: 2.2rem;
+      font-family: 'Orbitron', Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #e9f8ff;
+    }
+    .subtitle, .info {
+      font-size: 1.08rem;
+      margin-top: 4px;
+      color: #bdd4de;
+      font-weight: 500;
+    }
+    .typewriter {
+      font-size: 1.15rem;
+      margin: 12px 0;
+      height: 32px;
+      color: #f1ffbe;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .section {
+      background: #3c515d;
+      border-radius: 18px;
+      margin: 32px 0 0 0;
+      padding: 18px 22px;
+      font-size: 1.01rem;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.7s, transform 0.7s;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section-title {
+      font-size: 1.22rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .section ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .skills-meter {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .skill-bar {
+      background: #1a2d38;
+      border-radius: 10px;
+      padding: 7px 12px;
+      color: #e2e2e2;
+      font-size: 1.01rem;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 7px;
+    }
+    .skill-level {
+      display: block;
+      height: 8px;
+      border-radius: 5px;
+      background: linear-gradient(90deg, #00f2ff 60%, #f8ffae 100%);
+      margin-top: 5px;
+      width: 0;
+      transition: width 1.5s cubic-bezier(.53,.73,.38,.94);
+    }
+    .contact-bar {
+      background: #3c515d;
+      border-radius: 18px;
+      margin: 32px 0 0 0;
+      padding: 12px 22px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.05rem;
+      color: #e3e3e3;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 36px;
+      color: #bdd4de;
+      font-size: 1.15rem;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 8px; }
+      .header { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .contact-bar { flex-direction: column; gap: 8px; }
+      .skills-meter { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <!-- Placeholder avatar, you can replace src with your own image! -->
+      <img src="https://raw.githubusercontent.com/ryxxx2004/ryxxx2004.github.io/main/profile-placeholder.png" alt="Profile Photo" class="avatar">
+      <div class="title-section">
+        <div class="name">AIRA JOY M. MACALOOD</div>
+        <div class="subtitle">4th Year Computer Engineering Student</div>
+        <div class="info">
+          macalood.airajoy@marsu.edu.ph<br>
+          Bantay, Boac, Marinduque<br>
+          November 28, 2004 | 20 Years Old
+        </div>
+        <div class="typewriter" id="typewriter"></div>
+      </div>
+    </div>
+    
+    <div class="section" id="about">
+      <div class="section-title">About Me</div>
+      <div>
+        As a 4th year Computer Engineering student at Marinduque State University, I have developed a strong curiosity for how technology can be applied to improve everyday life. My academic journey has given me opportunities to explore both hardware and software, allowing me to work on projects that involve automation, embedded systems, and applied research. I enjoy turning ideas into working solutions and learning new methods to improve them.<br><br>
+        What motivates me most is the challenge of problem solving. Whether through designing circuits, writing code, or testing systems, I approach tasks with persistence and creativity. I also value collaboration, as working with others helps me gain new perspectives and produce better results. Beyond academics, I continue to explore technology through self-study and side projects, building a mindset that is adaptable and forward looking.
+      </div>
+    </div>
+    
+    <div class="section" id="education">
+      <div class="section-title">Education</div>
+      <div>
+        Senior High School Marinduque National High School (2020 – 2022)<br>
+        <em>With Honors</em><br>
+        Junior High School Marinduque National High School (2018 – 2020)<br>
+        <em>With Honors</em><br>
+        Primary Education Bantay Elementary School (2013 – 2016)
+      </div>
+    </div>
+    
+    <div class="section" id="achievements">
+      <div class="section-title">Achievements & Certifications</div>
+      <ul>
+        <li>10 Hours BOHS Training Course for SOI (April 2025)</li>
+        <li>Seminars & Trainings:</li>
+        <ul>
+          <li>Toxic Productivity: When Working Hard Becomes Harmful (April, 2025)</li>
+          <li>Fundamentals of Image processing using Open CV and Matlab (2023)</li>
+        </ul>
+      </ul>
+    </div>
+    
+    <div class="section" id="skills">
+      <div class="section-title">Skills</div>
+      <ul>
+        <li>
+          <strong>Technical Skills:</strong> Embedded Systems: Arduino, Raspberry Pi, Microcontrollers<br>
+          Programming: Python, C, C++<br>
+          Web Technologies: HTML, CSS, JavaScript<br>
+          Security: Basic knowledge in Cybersecurity
+        </li>
+        <li>
+          <strong>Soft Skills:</strong> Adaptability in fast paced environments, Critical Thinking, Problem Solving, Team Collaboration, Project Coordination, and Time Management.
+        </li>
+      </ul>
+      <div class="skills-meter">
+        <div class="skill-bar">Arduino &amp; Microcontrollers
+          <span class="skill-level" data-width="90%"></span>
+        </div>
+        <div class="skill-bar">Python Programming
+          <span class="skill-level" data-width="85%"></span>
+        </div>
+        <div class="skill-bar">C/C++ Programming
+          <span class="skill-level" data-width="80%"></span>
+        </div>
+        <div class="skill-bar">HTML/CSS/JavaScript
+          <span class="skill-level" data-width="88%"></span>
+        </div>
+        <div class="skill-bar">Cybersecurity Basics
+          <span class="skill-level" data-width="70%"></span>
+        </div>
+        <div class="skill-bar">Team Collaboration
+          <span class="skill-level" data-width="95%"></span>
+        </div>
+        <div class="skill-bar">Critical Thinking
+          <span class="skill-level" data-width="93%"></span>
+        </div>
+        <div class="skill-bar">Project Coordination
+          <span class="skill-level" data-width="90%"></span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contact-bar">
+      <span>No: 09512421207</span>
+      <span>IG: @arang_samsam</span>
+      <span>FB: Aira Joy Macalood</span>
+    </div>
+    
+    <div class="footer">
+      <span>────── ❀ ──────</span>
+    </div>
+  </div>
+  <!-- Automation and Animation Scripts -->
+  <script>
+    // Typewriter effect
+    const typewriterTexts = [
+      "Welcome to my Automation-powered Portfolio!",
+      "I love building solutions with Arduino & Python.",
+      "Problem Solving | Collaboration | Critical Thinking.",
+      "Scroll down to see my achievements and skills!"
+    ];
+    let twIndex = 0, twChar = 0, twCurrent = "", twElement = document.getElementById("typewriter");
+    function typeWriter() {
+      if (twChar < typewriterTexts[twIndex].length) {
+        twCurrent += typewriterTexts[twIndex].charAt(twChar);
+        twElement.textContent = twCurrent + "|";
+        twChar++;
+        setTimeout(typeWriter, 55);
+      } else {
+        twElement.textContent = twCurrent;
+        setTimeout(() => {
+          twCurrent = ""; twChar = 0;
+          twIndex = (twIndex + 1) % typewriterTexts.length;
+          setTimeout(typeWriter, 900);
+        }, 1200);
+      }
+    }
+    typeWriter();
+
+    // Section reveal animation on scroll
+    const sections = document.querySelectorAll('.section');
+    function revealSections() {
+      const windowHeight = window.innerHeight;
+      sections.forEach(sec => {
+        const secTop = sec.getBoundingClientRect().top;
+        if (secTop < windowHeight - 60) {
+          sec.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealSections);
+    window.addEventListener('load', revealSections);
+
+    // Animate skills meter bars
+    window.addEventListener('load', () => {
+      document.querySelectorAll('.skill-level').forEach(bar => {
+        setTimeout(() => {
+          bar.style.width = bar.getAttribute('data-width');
+        }, Math.random() * 900 + 600);
+      });
+    });
+  </script>
+</body>
+</html>
